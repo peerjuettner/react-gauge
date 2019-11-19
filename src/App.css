@@ -1,0 +1,38 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+.classic {
+  --section-one-color: red;
+  --section-two-color: green;
+  --progress-color:    rgba(116,160,194,0.5);
+}
+.citrus {
+  --section-one-color: orange;
+  --section-two-color: lightgreen;
+  --progress-color:    rgba(255,0,0,0.2);
+}
+.elegant {
+  --section-one-color: darkgrey;
+  --section-two-color: grey;
+  --progress-color:    rgba(0,0,0,0.2);
+}
