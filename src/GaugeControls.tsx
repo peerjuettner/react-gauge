@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Style } from './GaugeContainer';
+import { Styles } from './Constants';
 
 export interface IGaugeControlsProps {
     onSetSlider(key: string, value: number): void
@@ -15,7 +15,7 @@ export function GaugeControls(props: IGaugeControlsProps) {
     return (
         <form>
             <select id="styleDropdown" onChange={(e) => props.onSetStyle(e.currentTarget.value)}>
-                {Object.values(Style).map(v =>
+                {Object.values(Object.keys(Styles)).map(v =>
                     <option value={v}>{v}</option>
                 )}
             </select>

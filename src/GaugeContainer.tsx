@@ -2,11 +2,7 @@ import * as React from 'react';
 import { GaugeControls } from './GaugeControls';
 import GaugeView from './GaugeView';
 
-export enum Style {
-    classic = "classic",
-    citrus = "citrus",
-    elegant = "elegant",
-}
+
 
 
 export interface IGaugeContainerState {
@@ -21,7 +17,7 @@ export default class GaugeContainer extends React.Component<{}, IGaugeContainerS
     constructor(props: {}) {
         super(props);
         this.state = {
-            progress: 50, showThumb: false, size: 50, style: Style.classic, threshold: 50
+            progress: 50, showThumb: false, size: 50, style: "classic", threshold: 50
         }
     }
 

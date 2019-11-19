@@ -45,7 +45,6 @@ export default class GaugeView extends React.Component<IGaugeViewProps> {
         if (!ctx) { return };
 
         const clockwise = false;
-        const getCSS = (propname: string) => window.getComputedStyle(canvas, null).getPropertyValue(propname).toString().trim();
         // from 0-100 % to position on the circle circumference, 0 should be at the top
         const adjust = (fraction: number) => (fraction - 0.25) * 2.0 * Math.PI;
         const gradient = (radius: number, color: any) => {
